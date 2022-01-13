@@ -23,7 +23,13 @@ $ docker-compose up -d dev mongodb mongo-express
 # recreate application server with updated packages
 $ docker-compose up -d -V dev
 ```
+## Development
 
+```bash
+# unit tests
+$ docker-compose build dev
+$ docker-compose up -d -V dev
+```
 ## Test
 
 ```bash

@@ -1,4 +1,6 @@
-export const COMPANIES = [
+import { Company } from 'src/company/company.model';
+
+export const COMPANIES: Company[] = [
   {
     id: 1111,
     name: 'BrioHR',
@@ -11,7 +13,7 @@ export const COMPANIES = [
   },
   {
     id: 1113,
-    title: 'TechnoPro',
+    name: 'TechnoPro',
     subscribedChannels: ['UI'],
   },
 ];

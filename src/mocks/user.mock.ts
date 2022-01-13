@@ -1,4 +1,6 @@
-export const USERS = [
+import { User } from 'src/user/user.model';
+
+export const USERS: User[] = [
   {
     id: 1,
     company: 1111,

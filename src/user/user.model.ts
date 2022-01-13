@@ -1,8 +1,8 @@
 export class User {
-  id?: number;
-  name?: string;
-  email?: string;
+  id: number;
+  name: string;
+  email: string;
   mobile?: string;
-  company?: number;
+  company: number;
   subscribedChannels: string[];
 }
