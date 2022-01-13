@@ -1,4 +1,4 @@
-export const COMPANY = [
+export const COMPANIES = [
   {
     id: 1111,
     name: 'BrioHR',

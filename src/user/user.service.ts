@@ -5,20 +5,20 @@ import { USERS } from 'src/mocks/user.mock';
 export class UserService {
   users = USERS;
 
-  getBooks(): Promise<any> {
+  getUsers(): Promise<any> {
     return new Promise((resolve) => {
       resolve(this.users);
     });
   }
 
-  getBook(bookID): Promise<any> {
-    const id = Number(bookID);
+  getUser(userID): Promise<any> {
+    const id = Number(userID);
     return new Promise((resolve) => {
-      const book = this.users.find((book) => book.id === id);
-      if (!book) {
-        throw new HttpException('Book does not exist!', 404);
+      const user = this.users.find((user) => user.id === id);
+      if (!user) {
+        throw new HttpException('User does not exist!', 404);
       }
-      resolve(book);
+      resolve(user);
     });
   }
 }
