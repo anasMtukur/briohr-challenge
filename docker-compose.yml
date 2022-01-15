@@ -18,6 +18,8 @@ services:
     restart: unless-stopped
     environment:
       MONGO_URL: mongodb
+      MONGO_USERNAME: root
+      MONGO_PASSWORD: pass12345
   mongodb:
     image: mongo:5.0.0
     container_name: server-mongodb
