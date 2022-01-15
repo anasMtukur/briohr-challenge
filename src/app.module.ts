@@ -24,6 +24,12 @@ const password = process.env.MONGO_PASSWORD || 'pass12345';
     NotificationModule,
   ],
   controllers: [AppController],
-  providers: [AppService, UserService, CompanyService, NotificationTypeService],
+  providers: [
+    AppService,
+    UserService,
+    CompanyService,
+    NotificationTypeService,
+    NotificationModule,
+  ],
 })
 export class AppModule {}
