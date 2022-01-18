@@ -154,12 +154,10 @@ export class NotificationService {
 
   isUserSubscribedToChannel(channel: string, recipient: User): boolean {
     return recipient.subscribedChannels.includes(channel);
-    //throw new Error('Function not implemented.');
   }
 
   isCompanySubscribedToChannel(channel: string, company: Company): boolean {
     return company.subscribedChannels.includes(channel);
-    //throw new Error('Function not implemented.');
   }
 
   async createNotification(notification: UINotification) {
